@@ -83,7 +83,7 @@ body {
           transform: translateX(100%);
   -webkit-transition: 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
   transition: 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
-  background-color: #011030;
+  background: linear-gradient(45deg, rgb(0, 10, 35) 0%, rgb(0, 16, 48) 50%, rgb(0, 10, 60) 100%);
   z-index: 100;
 }
 .nav--active {
@@ -117,6 +117,32 @@ body {
   transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
   transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+@-webkit-keyframes navItemsAnimation {
+  from {
+    -webkit-transform: translateX(200%);
+            transform: translateX(200%);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes navItemsAnimation {
+  from {
+    -webkit-transform: translateX(200%);
+            transform: translateX(200%);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+.nav-items-animation {
+  -webkit-animation: navItemsAnimation 1s both;
+          animation: navItemsAnimation 1s both;
 }
 
 header {
@@ -165,7 +191,7 @@ header .hero-text h1 {
 header .hero-text p {
   padding-left: 0.6rem;
   font-size: 1.45rem;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.21rem;
 }
 header .border {
   position: absolute;
@@ -213,7 +239,7 @@ header .border-bottom {
     font-weight: 300;
   }
   header .hero-text p {
-    padding-left: 0.8rem;
+    padding-left: 1.5rem;
     font-size: 2.1rem;
     letter-spacing: 0.8rem;
   }

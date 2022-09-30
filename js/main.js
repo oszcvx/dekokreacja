@@ -1,5 +1,5 @@
-const nav = document.querySelector('.nav');
-const navBtn = document.querySelector('.burger-btn');
+const nav = document.querySelector('.nav')
+const navBtn = document.querySelector('.burger-btn')
 const allNavItems = document.querySelectorAll('.nav__item')
 const footerYear = document.querySelector('.footer__year')
 
@@ -10,14 +10,24 @@ const handleNav = () => {
 			nav.classList.remove('nav--active')
 		})
 	})
+
+	handleNavItemsAnimation()
 }
 
-navBtn.addEventListener('click', handleNav)
+const handleNavItemsAnimation = () => {
+	let delayTime = 0
+
+	allNavItems.forEach(item => {
+		item.classList.toggle('nav-items-animation')
+		item.style.animationDelay = '.' + delayTime + 's';
+		delayTime++;
+	})
+}
 
 const handleCurrentYear = () => {
 	const year = new Date().getFullYear()
 	footerYear.innerText = year
 }
 
-
-handleCurrentYear();
+navBtn.addEventListener('click', handleNav)
+handleCurrentYear()
