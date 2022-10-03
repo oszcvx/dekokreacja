@@ -1,0 +1,39 @@
+.wrapper {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1200px;
+}
+
+.section-heading {
+	font-family: 'Playfair Display', serif;
+	position: relative;
+	margin-bottom: 2em;
+	font-size: 3rem;
+	font-weight: 300;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 2px;
+	color: $main-blue;
+}
+
+.section-padding {
+	padding: 4em 2em;
+}
+
+@media (min-width: 768px) {
+	.section-heading {
+		font-size: 3.6rem;
+	}
+	.section-padding {
+		padding: 4em 2em;
+	}
+}
+
+@media (min-width: 992px) {
+	.section-heading {
+		font-size: 4.8rem;
+	}
+	.section-padding {
+		padding: 5em 2em;
+	}
+}

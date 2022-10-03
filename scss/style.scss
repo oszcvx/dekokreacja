@@ -1,4 +1,5 @@
 @import './colors.scss';
+@import './components.scss';
 
 *,
 *::before,
@@ -86,14 +87,14 @@ body {
 	height: 100vh;
 	width: 100%;
 	transform: translateX(100%);
-	transition: .5s cubic-bezier(.65,.05,.36,1);
+	transition: 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
 	// background-color: $main-blue;
-	background: linear-gradient(45deg, rgba(0,10,30,1) 0%, rgba(0,16,48,1) 50%, rgba(0,20,70,1) 100%);
+	background: linear-gradient(45deg, rgba(0, 10, 30, 1) 0%, rgba(0, 16, 48, 1) 50%, rgba(0, 20, 70, 1) 100%);
 	z-index: 100;
 
-&--active {
-	transform: translateX(0);
-}
+	&--active {
+		transform: translateX(0);
+	}
 
 	&__item {
 		position: relative;
@@ -117,7 +118,7 @@ body {
 
 		&:hover::before {
 			transform: scaleY(1);
-			transition: transform .3s;
+			transition: transform 0.3s;
 		}
 	}
 }
@@ -208,16 +209,72 @@ header {
 	}
 }
 
+// ABOUTUS
+
+.aboutus {
+	.section-heading {
+		color: rgb(13, 55, 90);
+	}
+
+	&__box {
+		display: flex;
+		flex-direction: column;
+		margin: 2em 0;
+	}
+
+	&__img {
+		width: 100%;
+		margin-bottom: 1em;
+	}
+
+	&__title {
+		font-family: 'Playfair Display', serif;
+		margin-bottom: 0.5em;
+	}
+
+	&__text {
+		font-size: 1.4rem;
+	}
+}
+
 .footer {
 	font-family: 'Open Sans', sans-serif;
 	text-align: center;
 }
 
+@media (min-width: 576px) {
+	.aboutus {
+		&__box {
+			flex-direction: row;
+			justify-content: space-between;
+
+			&-text {
+				width: 55%;
+
+				&--right {
+					text-align: right;
+				}
+			}
+
+			&-img {
+				width: 40%;
+
+				&--right {
+					order: 1;
+				}
+			}
+		}
+
+		&__img {
+			margin-bottom: 0;
+			max-height: 300px;
+		}
+	}
+}
+
 @media (min-width: 768px) {
 	header {
-
 		.hero-text {
-			
 			h1 {
 				font-size: 8rem;
 				font-weight: 300;
@@ -245,6 +302,35 @@ header {
 		.border-bottom {
 			border-top: none;
 			margin-top: 7.2rem;
+		}
+	}
+
+	.aboutus {
+		&__text {
+			font-size: 1.8rem;
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.aboutus {
+		&__box {
+			margin: 5em 0;
+
+			&-text {
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-end;
+				margin-bottom: 2.5em;
+			}
+		}
+
+		&__title {
+			font-size: 2.8rem;
+		}
+
+		&__text {
+			font-size: 2.2rem;
 		}
 	}
 }
