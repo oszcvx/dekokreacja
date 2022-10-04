@@ -326,6 +326,10 @@ header .border-bottom {
 .hero-img__text {
   padding: 1em 0;
 }
+.hero-img .heading-underline {
+  margin-bottom: 0;
+  width: 30rem;
+}
 
 .footer {
   font-family: "Open Sans", sans-serif;
