@@ -7,7 +7,7 @@
 .section-heading {
   font-family: "Playfair Display", serif;
   position: relative;
-  margin-bottom: 2em;
+  margin-bottom: 0.5em;
   font-size: 3rem;
   font-weight: 300;
   text-transform: uppercase;
@@ -18,6 +18,17 @@
 
 .section-padding {
   padding: 4em 2em;
+}
+
+.heading-underline {
+  margin-left: 50%;
+  margin-bottom: 5em;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 5px;
+  width: 18rem;
+  border: none;
+  background-color: #D1B542;
 }
 
 @media (min-width: 768px) {
@@ -34,6 +45,9 @@
   }
   .section-padding {
     padding: 5em 2em;
+  }
+  .heading-underline {
+    width: 24rem;
   }
 }
 *,
@@ -85,7 +99,7 @@ body {
   right: 0;
   height: 3px;
   content: "";
-  background-color: white;
+  background-color: #D1B542;
   -webkit-transition: width 0.3s;
   transition: width 0.3s;
 }
@@ -186,7 +200,7 @@ body {
 header {
   overflow: hidden;
 }
-header .hero-img {
+header .head-img {
   position: relative;
   background-image: url(../img/hero.jpg);
   background-size: cover;
@@ -195,14 +209,14 @@ header .hero-img {
   height: 75vh;
   z-index: 0;
 }
-header .hero-shadow {
+header .head-shadow {
   position: absolute;
   width: 100%;
   height: 100%;
   background-color: rgba(1, 10, 50, 0.933);
   z-index: -10;
 }
-header .hero-text {
+header .head-text {
   font-family: "Playfair Display", serif;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -222,11 +236,11 @@ header .hero-text {
   color: #fff;
   z-index: 5;
 }
-header .hero-text h1 {
+header .head-text h1 {
   font-size: 4.2rem;
   font-weight: 300;
 }
-header .hero-text p {
+header .head-text p {
   padding-left: 0.6rem;
   font-size: 1.45rem;
   letter-spacing: 0.21rem;
@@ -266,9 +280,6 @@ header .border-bottom {
   margin-top: 4.2rem;
 }
 
-.aboutus .section-heading {
-  color: rgb(13, 55, 90);
-}
 .aboutus__box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -285,10 +296,35 @@ header .border-bottom {
 }
 .aboutus__title {
   font-family: "Playfair Display", serif;
+  color: rgb(13, 55, 90);
   margin-bottom: 0.5em;
 }
 .aboutus__text {
   font-size: 1.4rem;
+}
+.aboutus__top {
+  margin-bottom: 10rem;
+}
+
+.hero-img {
+  position: relative;
+  padding: 10em 2em;
+  background-image: linear-gradient(45deg, rgba(1, 10, 50, 0.933), rgba(1, 10, 50, 0.933)), url("../img/hero1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+  z-index: 10;
+}
+.hero-img__title {
+  font-family: "Playfair Display", serif;
+  margin-bottom: 0.5em;
+  font-size: 4.8rem;
+}
+.hero-img__text {
+  padding: 1em 0;
 }
 
 .footer {
@@ -326,11 +362,11 @@ header .border-bottom {
   }
 }
 @media (min-width: 768px) {
-  header .hero-text h1 {
+  header .head-text h1 {
     font-size: 8rem;
     font-weight: 300;
   }
-  header .hero-text p {
+  header .head-text p {
     padding-left: 1.5rem;
     font-size: 2.1rem;
     letter-spacing: 0.8rem;

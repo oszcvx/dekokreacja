@@ -1,5 +1,6 @@
-@import './colors.scss';
-@import './components.scss';
+@import './colors';
+@import './components';
+@import './mixins';
 
 *,
 *::before,
@@ -20,7 +21,9 @@ body {
 	font-size: 1.6rem;
 }
 
+///////////////////////////////////////
 // NAV
+///////////////////////////////////////
 
 .burger-btn {
 	position: fixed;
@@ -58,7 +61,7 @@ body {
 		right: 0;
 		height: 3px;
 		content: '';
-		background-color: $pure-white;
+		background-color: $gold;
 		transition: width 0.3s;
 	}
 
@@ -88,7 +91,6 @@ body {
 	width: 100%;
 	transform: translateX(100%);
 	transition: 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
-	// background-color: $main-blue;
 	background: linear-gradient(45deg, rgba(0, 10, 30, 1) 0%, rgba(0, 16, 48, 1) 50%, rgba(0, 20, 70, 1) 100%);
 	z-index: 100;
 
@@ -137,11 +139,13 @@ body {
 	animation: navItemsAnimation 1s both;
 }
 
+///////////////////////////////////////
 // HEADER
+///////////////////////////////////////
 
 header {
 	overflow: hidden;
-	.hero-img {
+	.head-img {
 		position: relative;
 		background-image: url(../img/hero.jpg);
 		background-size: cover;
@@ -151,7 +155,7 @@ header {
 		z-index: 0;
 	}
 
-	.hero-shadow {
+	.head-shadow {
 		position: absolute;
 		width: 100%;
 		height: 100%;
@@ -159,7 +163,7 @@ header {
 		z-index: -10;
 	}
 
-	.hero-text {
+	.head-text {
 		font-family: 'Playfair Display', serif;
 		display: flex;
 		justify-content: center;
@@ -209,12 +213,11 @@ header {
 	}
 }
 
-// ABOUTUS
+///////////////////////////////////////
+// ABOUT US
+///////////////////////////////////////
 
 .aboutus {
-	.section-heading {
-		color: rgb(13, 55, 90);
-	}
 
 	&__box {
 		display: flex;
@@ -229,13 +232,46 @@ header {
 
 	&__title {
 		font-family: 'Playfair Display', serif;
+		color: rgb(13, 55, 90);
 		margin-bottom: 0.5em;
 	}
 
 	&__text {
 		font-size: 1.4rem;
 	}
+
+	&__top {
+		margin-bottom: 10rem;
+	}
 }
+
+///////////////////////////////////////
+// HERO
+///////////////////////////////////////
+
+.hero-img {
+	position: relative;
+	padding: 10em 2em;
+	@include heroImages('../img/hero1.jpg');
+	text-align: center;
+	color: $pure-white;
+	overflow: hidden;
+	z-index: 10;
+
+	&__title {
+		font-family: 'Playfair Display', serif;
+		margin-bottom: 0.5em;
+		font-size: 4.8rem;
+	}
+
+	&__text {
+		padding: 1em 0;
+	}
+}
+
+///////////////////////////////////////
+// FOOTER
+///////////////////////////////////////
 
 .footer {
 	font-family: 'Open Sans', sans-serif;
@@ -274,7 +310,7 @@ header {
 
 @media (min-width: 768px) {
 	header {
-		.hero-text {
+		.head-text {
 			h1 {
 				font-size: 8rem;
 				font-weight: 300;

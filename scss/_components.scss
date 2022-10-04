@@ -7,7 +7,7 @@
 .section-heading {
 	font-family: 'Playfair Display', serif;
 	position: relative;
-	margin-bottom: 2em;
+	margin-bottom: 0.5em;
 	font-size: 3rem;
 	font-weight: 300;
 	text-transform: uppercase;
@@ -18,6 +18,16 @@
 
 .section-padding {
 	padding: 4em 2em;
+}
+
+.heading-underline {
+	margin-left: 50%;
+	margin-bottom: 5em;
+	transform: translateX(-50%);
+	height: 5px;
+	width: 18rem;
+	border: none;
+	background-color: $gold;
 }
 
 @media (min-width: 768px) {
@@ -35,5 +45,9 @@
 	}
 	.section-padding {
 		padding: 5em 2em;
+	}
+
+	.heading-underline {
+		width: 24rem;
 	}
 }
