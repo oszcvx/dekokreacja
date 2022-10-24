@@ -31,11 +31,13 @@ nav {
 	.nav-link {
 		color: white;
 		border-bottom: 2px solid rgba(0, 0, 0, 0);
+		margin: 0 1rem;
 	}
 
 	.navbar-brand {
 		color: $pure-white;
 		font-size: 3rem;
+		margin: 0 2rem;
 	}
 
 	.navbar-toggler {
@@ -58,16 +60,6 @@ nav {
 
 	.navbar-toggler:hover {
 		color: $gold;
-	}
-}
-
-@keyframes navItemsAnimation {
-	from {
-		transform: translateX(200%);
-	}
-
-	to {
-		transform: translateX(0);
 	}
 }
 

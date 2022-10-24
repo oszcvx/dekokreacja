@@ -77,10 +77,12 @@ nav {
 nav .nav-link {
   color: white;
   border-bottom: 2px solid rgba(0, 0, 0, 0);
+  margin: 0 1rem;
 }
 nav .navbar-brand {
   color: white;
   font-size: 3rem;
+  margin: 0 2rem;
 }
 nav .navbar-toggler {
   color: white;
@@ -100,27 +102,6 @@ nav .navbar-toggler:hover {
   color: #D1B542;
 }
 
-@-webkit-keyframes navItemsAnimation {
-  from {
-    -webkit-transform: translateX(200%);
-            transform: translateX(200%);
-  }
-  to {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-}
-
-@keyframes navItemsAnimation {
-  from {
-    -webkit-transform: translateX(200%);
-            transform: translateX(200%);
-  }
-  to {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-}
 .nav-items-animation {
   -webkit-animation: navItemsAnimation 1s both;
           animation: navItemsAnimation 1s both;
