@@ -54,8 +54,20 @@ nav {
 		border-bottom: 2px solid $gold;
 	}
 
-	.navbar-brand:hover {
+	.nav-link:focus,
+	.nav-link:active {
+		color: $pure-white;
+	}
+
+	.navbar-brand:hover,
+	.navbar-brand:focus,
+	.navbar-brand:active {
 		color: $gold;
+	}
+
+	.navbar-brand:focus,
+	.navbar-brand:active {
+		color: $pure-white;
 	}
 
 	.navbar-toggler:hover {
@@ -63,9 +75,6 @@ nav {
 	}
 }
 
-.nav-items-animation {
-	animation: navItemsAnimation 1s both;
-}
 
 ///////////////////////////////////////
 // HEADER
