@@ -25,107 +25,39 @@ body {
 // NAV
 ///////////////////////////////////////
 
-.burger-btn {
-	position: fixed;
-	top: 20px;
-	right: 20px;
-	padding: 1em;
-	background: none;
-	border: 1px solid transparent;
-	cursor: pointer;
-	z-index: 1000;
+nav {
+	text-transform: uppercase;
 
-	&:focus {
-		outline: none;
-		border: 1px solid rgba(255, 255, 255, 0.5);
-		border-radius: 8px;
+	.nav-link {
+		color: white;
+		border-bottom: 2px solid rgba(0, 0, 0, 0);
 	}
 
-	&:hover {
-		.burger-btn__bars::after,
-		.burger-btn__bars::before {
-			width: 100%;
-		}
-	}
-
-	&__box {
-		position: relative;
-		width: 40px;
-		height: 30px;
-	}
-
-	&__bars,
-	&__bars::after,
-	&__bars::before {
-		position: absolute;
-		right: 0;
-		height: 3px;
-		content: '';
-		background-color: $gold;
-		transition: width 0.3s;
-	}
-
-	&__bars {
-		width: 100%;
-
-		&::after {
-			top: 13px;
-			width: 60%;
-		}
-
-		&::before {
-			top: 27px;
-			width: 30%;
-			transition-delay: 0.1s;
-		}
-	}
-}
-
-.nav {
-	position: fixed;
-	top: 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100vh;
-	width: 100%;
-	transform: translateX(100%);
-	transition: 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
-	background: linear-gradient(45deg, rgba(0, 10, 30, 1) 0%, rgba(0, 16, 48, 1) 50%, rgba(0, 20, 70, 1) 100%);
-	z-index: 100;
-
-	a:hover {
+	.navbar-brand {
 		color: $pure-white;
+		font-size: 3rem;
 	}
 
-	&--active {
-		transform: translateX(0);
-	}
-
-	&__item {
-		position: relative;
-		display: block;
-		margin: 0.5em 0;
-		padding: 0.5em 2em;
-		font-size: 2.8rem;
+	.navbar-toggler {
 		color: $pure-white;
-		text-decoration: none;
+		font-size: 3rem;
+	}
 
-		&::before {
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 3px;
-			height: 100%;
-			transform: scaleY(0);
-			background-color: $gold;
-			content: '';
-		}
+	.fa-bars {
+		padding: 10px;
+	}
 
-		&:hover::before {
-			transform: scaleY(1);
-			transition: transform 0.3s;
-		}
+	.nav-link:hover {
+		color: white;
+		border-bottom: 2px solid $gold;
+	}
+
+	.navbar-brand:hover {
+		color: $gold;
+	}
+
+	.navbar-toggler:hover {
+		color: $gold;
 	}
 }
 
@@ -156,7 +88,7 @@ header {
 		background-position: center;
 		width: 100vw;
 		height: 75vh;
-		z-index: 0;
+		z-index: -1;
 	}
 
 	.head-shadow {
@@ -222,7 +154,6 @@ header {
 ///////////////////////////////////////
 
 .aboutus {
-
 	&__box {
 		display: flex;
 		flex-direction: column;
