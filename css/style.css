@@ -29,6 +29,7 @@
   width: 18rem;
   border: none;
   background-color: #D1B542;
+  opacity: 1;
 }
 
 @media (min-width: 768px) {
@@ -138,6 +139,9 @@ body {
   background: linear-gradient(45deg, rgb(0, 10, 30) 0%, rgb(0, 16, 48) 50%, rgb(0, 20, 70) 100%);
   z-index: 100;
 }
+.nav a:hover {
+  color: white;
+}
 .nav--active {
   -webkit-transform: translateX(0);
           transform: translateX(0);
@@ -245,7 +249,7 @@ header .head-text p {
   font-size: 1.45rem;
   letter-spacing: 0.21rem;
 }
-header .border {
+header .bor {
   position: absolute;
   height: 3rem;
   width: 19rem;
@@ -271,13 +275,13 @@ header .border {
   align-items: center;
   top: 50%;
 }
-header .border-top {
+header .bor-top {
   border-bottom: none;
-  margin-top: -6rem;
+  margin-top: -7rem;
 }
-header .border-bottom {
+header .bor-bottom {
   border-top: none;
-  margin-top: 4.2rem;
+  margin-top: 3.6rem;
 }
 
 .aboutus__box {
@@ -308,7 +312,7 @@ header .border-bottom {
 
 .hero-img {
   position: relative;
-  padding: 10em 2em;
+  padding: 8em 2em;
   background-image: linear-gradient(45deg, rgba(1, 10, 50, 0.933), rgba(1, 10, 50, 0.933)), url("../img/hero1.jpg");
   background-size: cover;
   background-position: center;
@@ -321,14 +325,14 @@ header .border-bottom {
 .hero-img__title {
   font-family: "Playfair Display", serif;
   margin-bottom: 0.5em;
-  font-size: 4.8rem;
+  font-size: 3.8rem;
 }
 .hero-img__text {
   padding: 1em 0;
 }
 .hero-img .heading-underline {
   margin-bottom: 0;
-  width: 30rem;
+  width: 20rem;
 }
 
 .footer {
@@ -375,7 +379,7 @@ header .border-bottom {
     font-size: 2.1rem;
     letter-spacing: 0.8rem;
   }
-  header .border {
+  header .bor {
     height: 5rem;
     width: 34rem;
     display: -webkit-box;
@@ -384,16 +388,28 @@ header .border-bottom {
     border: 0.6rem solid;
     border-color: #D1B542;
   }
-  header .border-top {
+  header .bor-top {
     border-bottom: none;
-    margin-top: -10rem;
+    margin-top: -11.4rem;
   }
-  header .border-bottom {
+  header .bor-bottom {
     border-top: none;
     margin-top: 7.2rem;
   }
   .aboutus__text {
     font-size: 1.8rem;
+  }
+  .hero-img {
+    padding: 12em 2em;
+  }
+  .hero-img__title {
+    font-size: 6rem;
+  }
+  .hero-img__text {
+    font-size: 2.2rem;
+  }
+  .hero-img .heading-underline {
+    width: 30rem;
   }
 }
 @media (min-width: 992px) {
@@ -418,5 +434,8 @@ header .border-bottom {
   }
   .aboutus__text {
     font-size: 2.2rem;
+  }
+  .hero-img {
+    padding: 18em 2em;
   }
 }/*# sourceMappingURL=style.css.map */

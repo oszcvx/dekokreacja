@@ -94,6 +94,10 @@ body {
 	background: linear-gradient(45deg, rgba(0, 10, 30, 1) 0%, rgba(0, 16, 48, 1) 50%, rgba(0, 20, 70, 1) 100%);
 	z-index: 100;
 
+	a:hover {
+		color: $pure-white;
+	}
+
 	&--active {
 		transform: translateX(0);
 	}
@@ -185,7 +189,7 @@ header {
 		}
 	}
 
-	.border {
+	.bor {
 		position: absolute;
 		height: 3rem;
 		width: 19rem;
@@ -202,14 +206,14 @@ header {
 		top: 50%;
 	}
 
-	.border-top {
+	.bor-top {
 		border-bottom: none;
-		margin-top: -6rem;
+		margin-top: -7rem;
 	}
 
-	.border-bottom {
+	.bor-bottom {
 		border-top: none;
-		margin-top: 4.2rem;
+		margin-top: 3.6rem;
 	}
 }
 
@@ -251,7 +255,7 @@ header {
 
 .hero-img {
 	position: relative;
-	padding: 10em 2em;
+	padding: 8em 2em;
 	@include heroImages('../img/hero1.jpg');
 	text-align: center;
 	color: $pure-white;
@@ -261,7 +265,7 @@ header {
 	&__title {
 		font-family: 'Playfair Display', serif;
 		margin-bottom: 0.5em;
-		font-size: 4.8rem;
+		font-size: 3.8rem;
 	}
 
 	&__text {
@@ -270,7 +274,7 @@ header {
 
 	.heading-underline {
 		margin-bottom: 0;
-		width: 30rem;
+		width: 20rem;
 	}
 }
 
@@ -327,7 +331,7 @@ header {
 			}
 		}
 
-		.border {
+		.bor {
 			height: 5rem;
 			width: 34rem;
 			display: flex;
@@ -335,12 +339,12 @@ header {
 			border-color: $gold;
 		}
 
-		.border-top {
+		.bor-top {
 			border-bottom: none;
-			margin-top: -10rem;
+			margin-top: -11.4rem;
 		}
 
-		.border-bottom {
+		.bor-bottom {
 			border-top: none;
 			margin-top: 7.2rem;
 		}
@@ -349,6 +353,22 @@ header {
 	.aboutus {
 		&__text {
 			font-size: 1.8rem;
+		}
+	}
+
+	.hero-img {
+		padding: 12em 2em;
+
+		&__title {
+			font-size: 6rem;
+		}
+
+		&__text {
+			font-size: 2.2rem;
+		}
+
+		.heading-underline {
+			width: 30rem;
 		}
 	}
 }
@@ -373,5 +393,8 @@ header {
 		&__text {
 			font-size: 2.2rem;
 		}
+	}
+	.hero-img {
+		padding: 18em 2em;
 	}
 }
