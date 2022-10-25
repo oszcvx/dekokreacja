@@ -77,7 +77,7 @@ nav {
   text-align: center;
 }
 nav .container {
-  background-color: rgb(11, 13, 53);
+  background-color: rgba(11, 13, 53, 0.9);
   border-radius: 20px;
 }
 nav .nav-link {
@@ -354,7 +354,10 @@ header .bor-bottom {
   .hero-img {
     padding: 18em 2em;
   }
-}
-nav .nav-link {
-  padding: 1rem;
+  nav .container {
+    background-color: rgba(11, 13, 53, 0.7);
+  }
+  nav .nav-link {
+    padding: 1rem 0;
+  }
 }/*# sourceMappingURL=style.css.map */
