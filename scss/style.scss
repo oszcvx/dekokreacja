@@ -27,11 +27,19 @@ body {
 
 nav {
 	text-transform: uppercase;
+	z-index: 100;
+	text-align: center;
+
+	.container {
+		background-color: rgba(11, 13, 53);
+		border-radius: 20px;
+	}
 
 	.nav-link {
 		color: white;
 		border-bottom: 2px solid rgba(0, 0, 0, 0);
-		margin: 0 1rem;
+		margin: 1rem 1rem;
+		padding: 3rem 0;
 	}
 
 	.navbar-brand {
@@ -59,9 +67,7 @@ nav {
 		color: $pure-white;
 	}
 
-	.navbar-brand:hover,
-	.navbar-brand:focus,
-	.navbar-brand:active {
+	.navbar-brand:hover {
 		color: $gold;
 	}
 
@@ -74,7 +80,6 @@ nav {
 		color: $gold;
 	}
 }
-
 
 ///////////////////////////////////////
 // HEADER
@@ -328,5 +333,11 @@ header {
 	}
 	.hero-img {
 		padding: 18em 2em;
+	}
+}
+
+nav {
+	.nav-link {
+		padding: 1rem;
 	}
 }
