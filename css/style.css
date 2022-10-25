@@ -13,7 +13,7 @@
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 2px;
-  color: #011030;
+  color: rgb(1, 10, 50);
 }
 
 .section-padding {
@@ -77,20 +77,21 @@ nav {
   text-align: center;
 }
 nav .container {
-  background-color: rgba(11, 13, 53, 0.9);
+  background-color: rgba(28, 35, 75, 0.85);
   border-radius: 20px;
+  width: 90rem;
 }
 nav .nav-link {
+  font-size: 2rem;
   color: white;
   border-bottom: 2px solid rgba(0, 0, 0, 0);
   margin: 1rem 1rem;
   padding: 3rem 0;
 }
 nav .navbar-brand {
-  color: white;
-  font-size: 3rem;
   margin: 0 2rem;
 }
+nav .navbar-brand,
 nav .navbar-toggler {
   color: white;
   font-size: 3rem;
@@ -102,17 +103,15 @@ nav .nav-link:hover {
   color: white;
   border-bottom: 2px solid #D1B542;
 }
-nav .nav-link:focus,
-nav .nav-link:active {
-  color: white;
-}
-nav .navbar-brand:hover {
-  color: #D1B542;
-}
 nav .navbar-brand:focus,
-nav .navbar-brand:active {
+nav .navbar-brand:active,
+nav .nav-link:focus,
+nav .nav-link:active,
+nav .navbar-toggler:focus,
+nav .navbar-toggler:active {
   color: white;
 }
+nav .navbar-brand:hover,
 nav .navbar-toggler:hover {
   color: #D1B542;
 }
@@ -133,7 +132,7 @@ header .head-shadow {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: rgba(1, 10, 50, 0.933);
+  background-color: rgba(1, 10, 50, 0.7);
   z-index: -10;
 }
 header .head-text {
@@ -200,6 +199,9 @@ header .bor-bottom {
   margin-top: 3.6rem;
 }
 
+.aboutus .section-heading {
+  color: rgb(1, 10, 50);
+}
 .aboutus__box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -216,7 +218,7 @@ header .bor-bottom {
 }
 .aboutus__title {
   font-family: "Playfair Display", serif;
-  color: rgb(13, 55, 90);
+  color: rgb(1, 10, 50);
   margin-bottom: 0.5em;
 }
 .aboutus__text {
@@ -229,7 +231,7 @@ header .bor-bottom {
 .hero-img {
   position: relative;
   padding: 8em 2em;
-  background-image: linear-gradient(45deg, rgba(1, 10, 50, 0.933), rgba(1, 10, 50, 0.933)), url("../img/hero1.jpg");
+  background-image: linear-gradient(45deg, rgba(1, 10, 50, 0.7), rgba(1, 10, 50, 0.7)), url("../img/hero1.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -355,9 +357,10 @@ header .bor-bottom {
     padding: 18em 2em;
   }
   nav .container {
-    background-color: rgba(11, 13, 53, 0.7);
+    background-color: rgba(28, 35, 75, 0.7);
   }
   nav .nav-link {
-    padding: 1rem 0;
+    font-size: 1.6rem;
+    padding: 0.5rem 0;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -31,23 +31,24 @@ nav {
 	text-align: center;
 
 	.container {
-		background-color: rgba(11, 13, 53, 0.9);
+		background-color: rgba(28, 35, 75, 0.85);
 		border-radius: 20px;
+		width: 90rem;
 	}
 
 	.nav-link {
-		color: white;
+		font-size: 2rem;
+		color: $pure-white;
 		border-bottom: 2px solid rgba(0, 0, 0, 0);
 		margin: 1rem 1rem;
 		padding: 3rem 0;
 	}
 
 	.navbar-brand {
-		color: $pure-white;
-		font-size: 3rem;
 		margin: 0 2rem;
 	}
 
+	.navbar-brand,
 	.navbar-toggler {
 		color: $pure-white;
 		font-size: 3rem;
@@ -62,20 +63,16 @@ nav {
 		border-bottom: 2px solid $gold;
 	}
 
-	.nav-link:focus,
-	.nav-link:active {
-		color: $pure-white;
-	}
-
-	.navbar-brand:hover {
-		color: $gold;
-	}
-
 	.navbar-brand:focus,
-	.navbar-brand:active {
+	.navbar-brand:active,
+	.nav-link:focus,
+	.nav-link:active,
+	.navbar-toggler:focus,
+	.navbar-toggler:active {
 		color: $pure-white;
 	}
 
+	.navbar-brand:hover,
 	.navbar-toggler:hover {
 		color: $gold;
 	}
@@ -101,7 +98,7 @@ header {
 		position: absolute;
 		width: 100%;
 		height: 100%;
-		background-color: rgba(1, 10, 50, 0.933);
+		background-color: $shadow-blue;
 		z-index: -10;
 	}
 
@@ -160,6 +157,10 @@ header {
 ///////////////////////////////////////
 
 .aboutus {
+	.section-heading {
+		color: $main-blue;
+	}
+
 	&__box {
 		display: flex;
 		flex-direction: column;
@@ -173,7 +174,7 @@ header {
 
 	&__title {
 		font-family: 'Playfair Display', serif;
-		color: rgb(13, 55, 90);
+		color: $main-blue;
 		margin-bottom: 0.5em;
 	}
 
@@ -342,10 +343,11 @@ header {
 
 	nav {
 		.container {
-			background-color: rgba(11, 13, 53, 0.7);
+			background-color: rgba(28, 35, 75, 0.7);
 		}
 		.nav-link {
-			padding: 1rem 0;
+			font-size: 1.6rem;
+			padding: 0.5rem 0;
 		}
 	}
 }
