@@ -1,7 +1,7 @@
 .wrapper {
   margin: 0 auto;
   width: 100%;
-  max-width: 1600px;
+  max-width: 1400px;
 }
 
 .section-heading {
@@ -78,7 +78,7 @@ nav {
 }
 nav .container {
   background-color: rgba(28, 35, 75, 0.85);
-  border-radius: 20px;
+  margin-top: -5px;
   width: 90rem;
 }
 nav .nav-link {
@@ -254,51 +254,15 @@ header .bor-bottom {
   width: 20rem;
 }
 
-.offer__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.offer__circle {
-  margin: -3rem auto;
-  border: 3px solid #D1B542;
-  background-color: white;
-  border-radius: 50%;
-  width: 180px;
-  height: 180px;
-  -webkit-transform: translateX(-20%);
-          transform: translateX(-20%);
-}
-.offer__circle-color {
-  background-color: #D1B542;
-  -webkit-transform: translateX(20%);
-          transform: translateX(20%);
-}
-.offer__item {
-  margin-top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  font-size: 1.8rem;
-  text-align: center;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 0.1rem;
-  line-height: 3rem;
-}
-
 .footer {
   font-family: "Open Sans", sans-serif;
   text-align: center;
 }
 
 @media (min-width: 576px) {
+  nav .container {
+    border-radius: 0 0px 20px 20px;
+  }
   .aboutus__title {
     font-size: 2rem;
   }
