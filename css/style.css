@@ -1,7 +1,7 @@
 .wrapper {
   margin: 0 auto;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1600px;
 }
 
 .section-heading {
@@ -210,7 +210,7 @@ header .bor-bottom {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 2em 0;
+  margin: 1em 0;
 }
 .aboutus__img {
   width: 100%;
@@ -220,6 +220,7 @@ header .bor-bottom {
   font-family: "Playfair Display", serif;
   color: rgb(1, 10, 50);
   margin-bottom: 0.5em;
+  font-size: 2rem;
 }
 .aboutus__text {
   font-size: 1.4rem;
@@ -253,12 +254,53 @@ header .bor-bottom {
   width: 20rem;
 }
 
+.offer__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.offer__circle {
+  margin: -3rem auto;
+  border: 3px solid #D1B542;
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  -webkit-transform: translateX(-20%);
+          transform: translateX(-20%);
+}
+.offer__circle-color {
+  background-color: #D1B542;
+  -webkit-transform: translateX(20%);
+          transform: translateX(20%);
+}
+.offer__item {
+  margin-top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 1.8rem;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  line-height: 4rem;
+}
+
 .footer {
   font-family: "Open Sans", sans-serif;
   text-align: center;
 }
 
 @media (min-width: 576px) {
+  .aboutus__title {
+    font-size: 2rem;
+  }
   .aboutus__box {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -271,9 +313,6 @@ header .bor-bottom {
   .aboutus__box-text {
     width: 55%;
   }
-  .aboutus__box-text--right {
-    text-align: right;
-  }
   .aboutus__box-img {
     width: 40%;
   }
@@ -284,7 +323,7 @@ header .bor-bottom {
   }
   .aboutus__img {
     margin-bottom: 0;
-    max-height: 300px;
+    max-height: 600px;
   }
 }
 @media (min-width: 768px) {
@@ -314,6 +353,9 @@ header .bor-bottom {
     border-top: none;
     margin-top: 7.2rem;
   }
+  .aboutus__title {
+    font-size: 2.4rem;
+  }
   .aboutus__text {
     font-size: 1.8rem;
   }
@@ -342,16 +384,16 @@ header .bor-bottom {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    margin-bottom: 2.5em;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .aboutus__title {
-    font-size: 2.8rem;
+    font-size: 3rem;
   }
   .aboutus__text {
-    font-size: 2.2rem;
+    font-size: 2rem;
+    letter-spacing: 0.1em;
   }
   .hero-img {
     padding: 18em 2em;
@@ -362,5 +404,15 @@ header .bor-bottom {
   nav .nav-link {
     font-size: 1.6rem;
     padding: 0.5rem 0;
+  }
+}
+@media (min-width: 1280px) {
+  .aboutus__title {
+    font-size: 4rem;
+    margin-bottom: 2em;
+  }
+  .aboutus__text {
+    font-size: 2.5rem;
+    letter-spacing: 0.1em;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -164,7 +164,7 @@ header {
 	&__box {
 		display: flex;
 		flex-direction: column;
-		margin: 2em 0;
+		margin: 1em 0;
 	}
 
 	&__img {
@@ -176,6 +176,7 @@ header {
 		font-family: 'Playfair Display', serif;
 		color: $main-blue;
 		margin-bottom: 0.5em;
+		font-size: 2rem;
 	}
 
 	&__text {
@@ -217,6 +218,44 @@ header {
 }
 
 ///////////////////////////////////////
+// OFFER
+///////////////////////////////////////
+
+.offer {
+	&__list {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	&__circle {
+		margin: -3rem auto;
+		border: 3px solid $gold;
+		border-radius: 50%;
+		width: 180px;
+		height: 180px;
+		transform: translateX(-20%);
+
+		&-color {
+			background-color: $gold;
+			transform: translateX(20%);
+
+		}
+	}
+
+	&__item {
+		margin-top: 50%;
+		transform: translateY(-50%);
+		font-size: 1.8rem;
+		text-align: center;
+		font-weight: bold;
+		text-transform: uppercase;
+		letter-spacing: 0.1rem;
+		line-height: 4rem;
+	}
+}
+
+///////////////////////////////////////
 // FOOTER
 ///////////////////////////////////////
 
@@ -231,16 +270,16 @@ header {
 
 @media (min-width: 576px) {
 	.aboutus {
+		&__title {
+			font-size: 2rem;
+		}
+
 		&__box {
 			flex-direction: row;
 			justify-content: space-between;
 
 			&-text {
 				width: 55%;
-
-				&--right {
-					text-align: right;
-				}
 			}
 
 			&-img {
@@ -254,7 +293,7 @@ header {
 
 		&__img {
 			margin-bottom: 0;
-			max-height: 300px;
+			max-height: 600px;
 		}
 	}
 }
@@ -293,6 +332,9 @@ header {
 	}
 
 	.aboutus {
+		&__title {
+			font-size: 2.4rem;
+		}
 		&__text {
 			font-size: 1.8rem;
 		}
@@ -323,17 +365,17 @@ header {
 			&-text {
 				display: flex;
 				flex-direction: column;
-				justify-content: flex-end;
-				margin-bottom: 2.5em;
+				justify-content: center;
 			}
 		}
 
 		&__title {
-			font-size: 2.8rem;
+			font-size: 3rem;
 		}
 
 		&__text {
-			font-size: 2.2rem;
+			font-size: 2rem;
+			letter-spacing: 0.1em;
 		}
 	}
 
@@ -348,6 +390,20 @@ header {
 		.nav-link {
 			font-size: 1.6rem;
 			padding: 0.5rem 0;
+		}
+	}
+}
+
+@media (min-width: 1280px) {
+	.aboutus {
+		&__title {
+			font-size: 4rem;
+			margin-bottom: 2em;
+		}
+
+		&__text {
+			font-size: 2.5rem;
+			letter-spacing: 0.1em;
 		}
 	}
 }
