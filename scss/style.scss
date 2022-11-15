@@ -231,6 +231,7 @@ header {
 	&__circle {
 		margin: -3rem auto;
 		border: 3px solid $gold;
+		background-color: $pure-white;
 		border-radius: 50%;
 		width: 180px;
 		height: 180px;
@@ -251,7 +252,7 @@ header {
 		font-weight: bold;
 		text-transform: uppercase;
 		letter-spacing: 0.1rem;
-		line-height: 4rem;
+		line-height: 3rem;
 	}
 }
 
