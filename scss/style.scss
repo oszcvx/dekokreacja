@@ -31,7 +31,7 @@ nav {
 	text-align: center;
 
 	.container {
-		background-color: rgba(28, 35, 75, 0.85);
+		background-color: rgba(10, 15, 35, 0.9);
 		// border-radius: 20px;
 		margin-top: -5px;
 		width: 90rem;
@@ -205,7 +205,7 @@ header {
 	&__title {
 		font-family: 'Playfair Display', serif;
 		margin-bottom: 0.5em;
-		font-size: 3.8rem;
+		font-size: 2.8rem;
 	}
 
 	&__text {
@@ -222,10 +222,7 @@ header {
 // OFFER
 ///////////////////////////////////////
 
-.offer {
 
-	
-}
 
 ///////////////////////////////////////
 // FOOTER
@@ -322,11 +319,11 @@ header {
 		padding: 12em 2em;
 
 		&__title {
-			font-size: 6rem;
+			font-size: 4rem;
 		}
 
 		&__text {
-			font-size: 2.2rem;
+			font-size: 2rem;
 		}
 
 		.heading-underline {
@@ -363,7 +360,7 @@ header {
 
 	nav {
 		.container {
-			background-color: rgba(28, 35, 75, 0.7);
+			background-color: rgba(10, 15, 35, 0.9);
 		}
 		.nav-link {
 			font-size: 1.6rem;
